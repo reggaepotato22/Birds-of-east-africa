@@ -10,6 +10,12 @@ All colors MUST be HSL.
   :root {
     --background: 0 0% 100%;
     --foreground: 222.2 84% 4.9%;
+    
+    /* Nature-inspired palette for bird app */
+    --forest-dark: 140 40% 25%;
+    --forest-medium: 140 30% 45%;
+    --forest-light: 140 25% 95%;
+    --sage: 140 20% 85%;
 
     --card: 0 0% 100%;
     --card-foreground: 222.2 84% 4.9%;

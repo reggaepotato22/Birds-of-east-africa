@@ -19,12 +19,11 @@ export default {
         ring: "hsl(var(--ring))",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
-        forest: {
-          dark: "hsl(var(--forest-dark))",
-          medium: "hsl(var(--forest-medium))",
-          light: "hsl(var(--forest-light))",
-        },
-        sage: "hsl(var(--sage))",
+        terracotta: "hsl(var(--terracotta))",
+        savanna: "hsl(var(--savanna-gold))",
+        earth: "hsl(var(--earth-brown))",
+        sunset: "hsl(var(--sunset-orange))",
+        acacia: "hsl(var(--acacia-green))",
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",

@@ -92,15 +92,19 @@ Respond in JSON format:
     }
 
     const data = await response.json();
-    const result = data.choices[0].message.content;
+    let result = data.choices[0].message.content;
     
     console.log('Bird identification result:', result);
+
+    // Remove markdown code fences if present
+    result = result.replace(/```json\n?/g, '').replace(/```\n?/g, '').trim();
 
     // Try to parse as JSON
     let parsedResult;
     try {
       parsedResult = JSON.parse(result);
     } catch (e) {
+      console.error('JSON parse error:', e);
       parsedResult = {
         birdName: "Unable to parse result",
         confidence: 0.5,
